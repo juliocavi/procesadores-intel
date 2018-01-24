@@ -1,8 +1,8 @@
 #BlueJ class context
 comment0.target=Procesador
-comment0.text=\r\n\ Clase\ que\ almacenara\ el\ modelo,\ la\ frecuencia\ y\ el\ a\u00F1o\ de\ salida\ \r\n\ de\ procesadores\ Intel.\ \r\n\r\n\ @autor\ (Julio)\r\n\ @versi\u00F3n\ (24/01/2018)\r\n
-comment1.params=
-comment1.target=Procesador()
+comment0.text=\r\n\ Clase\ que\ almacenara\ el\ modelo,\ la\ frecuencia\ y\ el\ a\u00F1o\ de\ salida\ \r\n\ de\ procesadores\ Intel.\ \r\n\r\n\ @autor\ (Julio)\r\n\ @versi\u00F3n\ (Date\:\ 24/01/2018)\r\n
+comment1.params=modelo\ frecuencia\ ano\ id
+comment1.target=Procesador(java.lang.String,\ int,\ int,\ int)
 comment1.text=\r\n\ Constructor\ para\ objetos\ de\ clase\ Peocesador.\r\n
 comment2.params=
 comment2.target=java.lang.String\ getDetalles()

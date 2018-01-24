@@ -4,7 +4,7 @@
  * de procesadores Intel. 
  *
  * @autor (Julio)
- * @versión (24/01/2018)
+ * @versión (Date: 24/01/2018)
  */
 public class Procesador
 {
@@ -21,12 +21,12 @@ public class Procesador
     /**
      * Constructor para objetos de clase Peocesador.
      */
-    public Procesador()
+    public Procesador(String modelo, int frecuencia, int ano, int id)
     {
-        modelo = "";
-        frecuencia = 0 ;
-        ano = 0;
-        id = 0;
+        this.modelo = modelo;
+        this.frecuencia = frecuencia;
+        this.ano = ano;
+        this.id = id;
     }
 
     /**

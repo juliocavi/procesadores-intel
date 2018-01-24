@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=PcComponentes
+comment0.text=\r\n\ Guarda\ objetos\ de\ la\ clase\ Procesadores.\r\n\r\n\ @autor\ (Julio)\r\n\ @versi\u00F3n\ (Date\:\ 24/01/2018)\r\n
+comment1.params=
+comment1.target=PcComponentes()
+comment1.text=\r\n\ Constructor\ de\ objetos\ de\ la\ clase\ PcComponentes.\r\n
+comment2.params=modelo\ frecuencia\ ano
+comment2.target=void\ addProcesador(java.lang.String,\ int,\ int)
+comment2.text=\r\n\ A\u00F1adir\ un\ nuevo\ objeto,\ \r\n\ cuyas\ caracteristicas\ son\ introducidas\ por\ par\u00E1metros.\r\n\r\n\ @param\ modelo,\ String\ para\ el\ modelo\ del\ procesador\r\n\ @param\ frecuencia,\ entero\ para\ la\ frecuencia\ del\ procesador\r\n\ @param\ ano,\ entero\ para\ el\ a\u00F1o\ del\ procesador\r\n
+numComments=3
