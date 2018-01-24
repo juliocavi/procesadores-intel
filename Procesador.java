@@ -20,11 +20,24 @@ public class Procesador
      */
     public Procesador()
     {
-        modelo = "Intel Core ";
+        modelo = "";
         frecuencia = 0 ;
         ano = 0;
     }
 
+    /**
+     * Devuelve todos los datos de un procesador en un solo String.
+     * 
+     * @return todos los detalles del procesador.
+     */
+    public String getDetalles()
+    {
+        String detalles = "Intel Core " + modelo 
+        + " - Frecuencia: " + frecuencia + " MHz"
+        + " - Año: " + ano;
+        return detalles;
+    }
+    
     /**
      * Devolver el modelo del procesador.
      * 
