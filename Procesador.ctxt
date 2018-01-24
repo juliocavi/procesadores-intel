@@ -1,0 +1,25 @@
+#BlueJ class context
+comment0.target=Procesador
+comment0.text=\r\n\ Clase\ que\ almacenara\ el\ modelo,\ la\ frecuencia\ y\ el\ a\u00F1o\ de\ salida\ \r\n\ de\ procesadores\ Intel.\ \r\n\r\n\ @autor\ (Julio)\r\n\ @versi\u00F3n\ (24/01/2018)\r\n
+comment1.params=
+comment1.target=Procesador()
+comment1.text=\r\n\ Constructor\ para\ objetos\ de\ clase\ Peocesador\r\n
+comment2.params=
+comment2.target=java.lang.String\ getModelo()
+comment2.text=\r\n\ Devolver\ el\ modelo\ del\ procesador.\r\n\ \r\n\ @return\ el\ modelo\ del\ procesador.\r\n
+comment3.params=modelo
+comment3.target=void\ setModelo(java.lang.String)
+comment3.text=\r\n\ Cambiar\ el\ modelo\ del\ procesador.\r\n\r\n\ @parametro\ modelo\ \ es\ una\ cadena\ de\ caracteres\ \r\n\ que\ indica\ el\ nuevo\ modelo\ de\ procesador.\r\n
+comment4.params=
+comment4.target=int\ getFrecuencia()
+comment4.text=\r\n\ Devolver\ la\ frecuencia\ del\ procesador.\r\n\ \r\n\ @return\ la\ frecuencia\ del\ procesador.\r\n
+comment5.params=frecuencia
+comment5.target=void\ setFrecuencia(int)
+comment5.text=\r\n\ Cambiar\ la\ frecuencia\ del\ procesador.\r\n\r\n\ @parametro\ frecuencia\ es\ un\ entero\ \r\n\ que\ indida\ la\ nueva\ frecuencia\ del\ procesador.\r\n
+comment6.params=
+comment6.target=int\ getAno()
+comment6.text=\r\n\ Devolver\ el\ a\u00F1o\ de\ salida\ del\ procesador.\r\n\ \r\n\ @return\ el\ a\u00F1o\ de\ salida\ del\ procesador.\r\n
+comment7.params=ano
+comment7.target=void\ setAno(int)
+comment7.text=\r\n\ Cambiar\ el\ a\u00F1o\ del\ procesador.\r\n\r\n\ @parametro\ ano\ es\ un\ entero\ \r\n\ que\ indida\ el\ nuevo\ a\u00F1o\ del\ procesador.\r\n
+numComments=8
