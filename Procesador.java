@@ -14,15 +14,19 @@ public class Procesador
     private int frecuencia;
     //Año de salida del procesador.
     private int ano;
+    //Identificador único de cada objeto de la clase Procesador. 
+    private int id;
+    
     
     /**
-     * Constructor para objetos de clase Peocesador
+     * Constructor para objetos de clase Peocesador.
      */
     public Procesador()
     {
         modelo = "";
         frecuencia = 0 ;
         ano = 0;
+        id = 0;
     }
 
     /**
