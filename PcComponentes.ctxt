@@ -10,4 +10,6 @@ comment2.text=\r\n\ A\u00F1adir\ un\ nuevo\ objeto,\ \r\n\ cuyas\ caracteristica
 comment3.params=
 comment3.target=void\ mostrarCpus()
 comment3.text=\r\n\ Muestra\ una\ lista\ con\ los\ detalles\ de\ todos\ los\ objetos\ Procesador.\r\n
-numComments=4
+comment4.params=id\ frecuencia
+comment4.target=void\ modificarFrecuencia(int,\ int)
+numComments=5

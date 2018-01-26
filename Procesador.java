@@ -104,4 +104,9 @@ public class Procesador
     {
         this.ano = ano;
     }
+    
+    public int getId()
+    {
+        return id;
+    }
 }

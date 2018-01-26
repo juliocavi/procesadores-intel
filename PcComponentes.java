@@ -36,7 +36,7 @@ public class PcComponentes
 
     /**
      * Muestra una lista con los detalles de todos los objetos Procesador.
-      */
+     */
     public void mostrarCpus()
     {
         for (Procesador cpu : cpus){
@@ -44,4 +44,18 @@ public class PcComponentes
         }
     }
 
+    public void modificarFrecuencia(int id, int frecuencia)
+    {
+        int cont = 0;
+        boolean encontrado = false;
+        while(cont < cpus.size() && !encontrado){
+            Procesador cpu = cpus.get(cont);
+            if(cpu.getId() == id){
+                cpu.setFrecuencia(frecuencia);
+                encontrado = true;
+            }
+            cont++;
+        }
+
+    }
 }

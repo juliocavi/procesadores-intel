@@ -25,4 +25,6 @@ comment7.text=\r\n\ Devolver\ el\ a\u00F1o\ de\ salida\ del\ procesador.\r\n\ \r
 comment8.params=ano
 comment8.target=void\ setAno(int)
 comment8.text=\r\n\ Cambiar\ el\ a\u00F1o\ del\ procesador.\r\n\r\n\ @parametro\ ano\ es\ un\ entero\ \r\n\ que\ indida\ el\ nuevo\ a\u00F1o\ del\ procesador.\r\n
-numComments=9
+comment9.params=
+comment9.target=int\ getId()
+numComments=10
