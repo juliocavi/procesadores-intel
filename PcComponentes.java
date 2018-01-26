@@ -33,5 +33,15 @@ public class PcComponentes
         id++;
         cpus.add(new Procesador(modelo,frecuencia,ano,id));
     }
-    
+
+    /**
+     * Muestra una lista con los detalles de todos los objetos Procesador.
+      */
+    public void mostrarCpus()
+    {
+        for (Procesador cpu : cpus){
+            System.out.println(cpu.getDetalles());
+        }
+    }
+
 }
