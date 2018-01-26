@@ -1,5 +1,5 @@
 import java.util.ArrayList;
-
+import java.util.Iterator;
 /**
  * Guarda objetos de la clase Procesadores.
  *
@@ -56,6 +56,15 @@ public class PcComponentes
             }
             cont++;
         }
-
+    }
+    
+    public void eliminacionMedianteIterador(int ano)
+    {
+        Iterator<Procesador> itcpu = cpus.iterator();
+        while(itcpu.hasNext()){
+            if(itcpu.next().getAno() == ano){
+                itcpu.remove();
+            }
+        }
     }
 }

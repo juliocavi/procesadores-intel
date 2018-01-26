@@ -12,4 +12,6 @@ comment3.target=void\ mostrarCpus()
 comment3.text=\r\n\ Muestra\ una\ lista\ con\ los\ detalles\ de\ todos\ los\ objetos\ Procesador.\r\n
 comment4.params=id\ frecuencia
 comment4.target=void\ modificarFrecuencia(int,\ int)
-numComments=5
+comment5.params=ano
+comment5.target=void\ eliminacionMedianteIterador(int)
+numComments=6
