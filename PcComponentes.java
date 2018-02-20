@@ -94,7 +94,7 @@ public class PcComponentes
             System.out.println(cpu.getDetalles());
         }
     }
-    
+
     public void ordenarPorFrecuencia()
     {
         String cpusOrdenados = "";
@@ -115,6 +115,24 @@ public class PcComponentes
         }
         for (Procesador cpu : cpus){
             System.out.println(cpu.getDetalles());
+        }
+    }
+    
+    public void procesadoresAgrupadosPorGama()
+    {
+        HashSet<String> gamaProcesador = new HashSet<>();
+        for(Procesador gama : cpus){
+            gamaProcesador.add(gama.getGama());
+        }
+        
+        for(String gama : gamaProcesador){
+            System.out.println(gama + ":");
+            for(int i = 0; i<cpus.size();i++){
+                if(cpus.get(i).getGama().equals(gama)){
+                    System.out.println(cpus.get(i).getDetalles());
+                }
+            }
+            System.out.println();
         }
     }
 }

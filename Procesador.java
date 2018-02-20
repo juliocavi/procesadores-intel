@@ -39,7 +39,7 @@ public class Procesador
      */
     public String getDetalles()
     {
-        String detalles = "Intel Core " + gama + modelo 
+        String detalles = "Intel Core " + gama + " - " + modelo 
         + " - Frecuencia: " + frecuencia + " MHz"
         + " - Año: " + ano;
         return detalles;
