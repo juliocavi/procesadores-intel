@@ -36,7 +36,6 @@ public class PcComponentes
         catch(FileNotFoundException e){
             e.printStackTrace();
         }
-
     }
 
     /**
