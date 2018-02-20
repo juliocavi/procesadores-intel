@@ -135,4 +135,38 @@ public class PcComponentes
             System.out.println();
         }
     }
+    
+    public void cpusOrdenadorAlfabeticamente(String gama){
+        ArrayList<Procesador> procesadores = new ArrayList<>();
+        
+        for(Procesador cpu : cpus){
+            if(cpu.getGama().equals(gama)){
+                procesadores.add(cpu);
+            }
+        }
+        
+        String modeloMenor = "";
+        Procesador procesadorNuevo = null;
+        int posicionProcesadorModeloMenor = 0;
+        if(procesadores.size() > 0){
+            for(int i = 0; i<procesadores.size()-1; i++){
+                procesadorNuevo = procesadores.get(i);
+                posicionProcesadorModeloMenor = i;
+                for(int j = i+1; j<procesadores.size(); j++){
+                    if(procesadorNuevo.getModelo().compareToIgnoreCase(procesadores.get(j).getModelo()) > 0){
+                    procesadorNuevo = procesadores.get(j);
+                    posicionProcesadorModeloMenor = j;
+                    }
+                }
+                if(posicionProcesadorModeloMenor != i){
+                    procesadores.add(i, procesadores.get(posicionProcesadorModeloMenor));
+                    procesadores.remove(posicionProcesadorModeloMenor+1);
+                }
+            }
+        }
+        
+        for(Procesador cpuOrdenado : procesadores){
+            System.out.println(cpuOrdenado.getDetalles());
+        }
+    }
 }
