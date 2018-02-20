@@ -95,4 +95,27 @@ public class PcComponentes
             System.out.println(cpu.getDetalles());
         }
     }
+    
+    public void ordenarPorFrecuencia()
+    {
+        String cpusOrdenados = "";
+        for(int i=0; i<cpus.size()-1; i++){
+            int frecuenciaMayor = cpus.get(i).getFrecuencia();
+            int posicionFrecuenciaMayor = i;
+            for(int j=i+1; j<cpus.size(); j++){
+                if(cpus.get(j).getFrecuencia() >= frecuenciaMayor){
+                    frecuenciaMayor = cpus.get(j).getFrecuencia();
+                    posicionFrecuenciaMayor = j;
+                }
+            }
+            if(posicionFrecuenciaMayor !=i){
+                Procesador cpuMasALaIzquierda = cpus.get(i);
+                cpus.set(i, cpus.get(posicionFrecuenciaMayor));
+                cpus.set(posicionFrecuenciaMayor, cpuMasALaIzquierda);
+            }
+        }
+        for (Procesador cpu : cpus){
+            System.out.println(cpu.getDetalles());
+        }
+    }
 }
