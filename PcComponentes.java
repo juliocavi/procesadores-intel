@@ -1,5 +1,9 @@
 import java.util.ArrayList;
 import java.util.Iterator;
+import java.util.Scanner;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.HashSet;
 /**
  * Guarda objetos de la clase Procesadores.
  *
@@ -14,24 +18,25 @@ public class PcComponentes
     /**
      * Constructor de objetos de la clase PcComponentes.
      */
-    public PcComponentes()
+    public PcComponentes(String archivo)
     {
         cpus = new ArrayList<Procesador>();
         id = 0;
-    }
+        try{
+            File file = new File(archivo);
+            Scanner scf = new Scanner(file);
+            while(scf.hasNextLine()){
+                String[] elementos = scf.nextLine().split(" # ");
+                id++;
+                Procesador procesador = new Procesador(elementos[0], elementos[1], Integer.parseInt(elementos[2]), Integer.parseInt(elementos[3]), id);
+                cpus.add(procesador);
+            }
+            scf.close();
+        }
+        catch(FileNotFoundException e){
+            e.printStackTrace();
+        }
 
-    /**
-     * Añadir un nuevo objeto, 
-     * cuyas caracteristicas son introducidas por parámetros.
-     *
-     * @param modelo, String para el modelo del procesador
-     * @param frecuencia, entero para la frecuencia del procesador
-     * @param ano, entero para el año del procesador
-     */
-    public void addProcesador(String modelo, int frecuencia, int ano)
-    {
-        id++;
-        cpus.add(new Procesador(modelo,frecuencia,ano,id));
     }
 
     /**
@@ -57,7 +62,7 @@ public class PcComponentes
             cont++;
         }
     }
-    
+
     public void eliminacionMedianteIterador(int ano)
     {
         Iterator<Procesador> itcpu = cpus.iterator();
@@ -65,6 +70,29 @@ public class PcComponentes
             if(itcpu.next().getAno() == ano){
                 itcpu.remove();
             }
+        }
+    }
+
+    public void ordenarPorAno()
+    {
+        String cpusOrdenados = "";
+        for(int i=0; i<cpus.size()-1; i++){
+            int anoMayor = cpus.get(i).getAno();
+            int posicionAnoMayor = i;
+            for(int j=i+1; j<cpus.size(); j++){
+                if(cpus.get(j).getAno() >= anoMayor){
+                    anoMayor = cpus.get(j).getAno();
+                    posicionAnoMayor = j;
+                }
+            }
+            if(posicionAnoMayor !=i){
+                Procesador cpuMasALaIzquierda = cpus.get(i);
+                cpus.set(i, cpus.get(posicionAnoMayor));
+                cpus.set(posicionAnoMayor, cpuMasALaIzquierda);
+            }
+        }
+        for (Procesador cpu : cpus){
+            System.out.println(cpu.getDetalles());
         }
     }
 }

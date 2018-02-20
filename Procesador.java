@@ -8,6 +8,8 @@
  */
 public class Procesador
 {
+    //Gama del procesador.
+    private String gama;
     //Modelo del procesador.
     private String modelo;
     //Frecuencia del procesador.
@@ -21,8 +23,9 @@ public class Procesador
     /**
      * Constructor para objetos de clase Peocesador.
      */
-    public Procesador(String modelo, int frecuencia, int ano, int id)
+    public Procesador(String gama, String modelo, int frecuencia, int ano, int id)
     {
+        this.gama = gama;
         this.modelo = modelo;
         this.frecuencia = frecuencia;
         this.ano = ano;
@@ -36,10 +39,31 @@ public class Procesador
      */
     public String getDetalles()
     {
-        String detalles = "Intel Core " + modelo 
+        String detalles = "Intel Core " + gama + modelo 
         + " - Frecuencia: " + frecuencia + " MHz"
         + " - Año: " + ano;
         return detalles;
+    }
+    
+    /**
+     * Devolver la gama del procesador.
+     * 
+     * @return la gama del procesador.
+     */
+    public String getGama()
+    {
+        return gama;
+    }
+    
+    /**
+     * Cambiar la gama del procesador.
+     *
+     * @parametro gama  es una cadena de caracteres 
+     * que indica la nueva gama de procesador.
+     */
+    public void setGama(String gama)
+    {
+        this.gama = gama;
     }
     
     /**
